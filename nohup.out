@@ -1,0 +1,324 @@
+[06/Aug/2017 22:07:58] "GET / HTTP/1.1" 200 1716
+[06/Aug/2017 22:08:02] "GET / HTTP/1.1" 200 1716
+Not Found: /ops
+[06/Aug/2017 22:08:07] "GET /ops HTTP/1.1" 404 1940
+Not Found: /users
+[06/Aug/2017 22:08:36] "GET /users HTTP/1.1" 404 1946
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 06, 2017 - 22:07:54
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7ff7d2937aa0>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 20, in <module>
+    url(r'^ops/', inclue(ops)),
+NameError: name 'inclue' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7fef79314aa0>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 20, in <module>
+    url(r'^ops/', include(ops.urls)),
+NameError: name 'ops' is not defined
+Not Found: /ops
+[06/Aug/2017 22:12:27] "GET /ops HTTP/1.1" 404 1940
+Not Found: /users
+[06/Aug/2017 22:12:32] "GET /users HTTP/1.1" 404 1946
+[06/Aug/2017 22:12:38] "GET /admin HTTP/1.1" 301 0
+[06/Aug/2017 22:12:38] "GET /admin/ HTTP/1.1" 302 0
+[06/Aug/2017 22:12:38] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[06/Aug/2017 22:12:38] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[06/Aug/2017 22:12:38] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[06/Aug/2017 22:12:38] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[06/Aug/2017 22:12:38] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[06/Aug/2017 22:12:38] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[06/Aug/2017 22:12:48] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[06/Aug/2017 22:12:48] "GET /admin/ HTTP/1.1" 200 2779
+[06/Aug/2017 22:12:48] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[06/Aug/2017 22:12:48] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[06/Aug/2017 22:12:48] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[06/Aug/2017 22:12:48] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[06/Aug/2017 22:12:51] "GET /admin/auth/user/ HTTP/1.1" 200 6449
+[06/Aug/2017 22:12:51] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[06/Aug/2017 22:12:51] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[06/Aug/2017 22:12:51] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[06/Aug/2017 22:12:51] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[06/Aug/2017 22:12:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Aug/2017 22:12:51] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[06/Aug/2017 22:12:51] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[06/Aug/2017 22:12:51] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[06/Aug/2017 22:12:51] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[06/Aug/2017 22:12:51] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[06/Aug/2017 22:12:51] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[06/Aug/2017 22:12:51] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[06/Aug/2017 22:12:51] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[06/Aug/2017 22:12:51] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[06/Aug/2017 22:12:54] "GET /admin/auth/user/1/change/ HTTP/1.1" 200 13400
+[06/Aug/2017 22:12:54] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[06/Aug/2017 22:12:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Aug/2017 22:12:54] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 5755
+[06/Aug/2017 22:12:54] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12389
+[06/Aug/2017 22:12:54] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7790
+[06/Aug/2017 22:12:54] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20529
+[06/Aug/2017 22:12:54] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[06/Aug/2017 22:12:54] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[06/Aug/2017 22:12:54] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[06/Aug/2017 22:12:54] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[06/Aug/2017 22:12:54] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[06/Aug/2017 22:12:54] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[06/Aug/2017 22:12:54] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[06/Aug/2017 22:12:54] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[06/Aug/2017 22:13:02] "GET /admin/password_change/ HTTP/1.1" 200 2588
+[06/Aug/2017 22:13:12] "POST /admin/password_change/ HTTP/1.1" 200 2724
+[06/Aug/2017 22:13:57] "GET /admin/ HTTP/1.1" 200 2779
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 06, 2017 - 22:12:24
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7fde878d3aa0>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from api.ops import views
+ImportError: No module named ops
+Unhandled exception in thread started by <function wrapper at 0x7f5e74a60aa0>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from api.ops import views
+ImportError: No module named ops
+Unhandled exception in thread started by <function wrapper at 0x7fac64e09aa0>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from api.ops import views
+ImportError: No module named ops
+Unhandled exception in thread started by <function wrapper at 0x7f1bfdfc8aa0>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from api.ops import views
+ImportError: No module named ops
+Unhandled exception in thread started by <function wrapper at 0x7f08e6772aa0>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from api.ops import views
+ImportError: No module named ops
+[06/Aug/2017 23:11:52] "GET /users HTTP/1.1" 301 0
+[06/Aug/2017 23:11:52] "GET /users/ HTTP/1.1" 200 9707
+[06/Aug/2017 23:11:52] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 2876
+[06/Aug/2017 23:11:52] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+[06/Aug/2017 23:11:52] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+[06/Aug/2017 23:11:52] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+[06/Aug/2017 23:11:52] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+[06/Aug/2017 23:11:52] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[06/Aug/2017 23:11:52] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /ops
+[06/Aug/2017 23:11:58] "GET /ops HTTP/1.1" 404 4027
+[06/Aug/2017 23:12:06] "GET /groups HTTP/1.1" 301 0
+/home/ochlo/py/tutorial/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'django.contrib.auth.models.Group'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[06/Aug/2017 23:12:06] "GET /groups/ HTTP/1.1" 200 8541
+[06/Aug/2017 23:12:31] "GET /groups/?format=api HTTP/1.1" 200 8618
+[06/Aug/2017 23:12:43] "POST /groups/?format=api HTTP/1.1" 201 8889
+[06/Aug/2017 23:12:49] "OPTIONS /groups/?format=api HTTP/1.1" 200 9517
+[06/Aug/2017 23:13:03] "GET /?format=api HTTP/1.1" 200 5428
+[06/Aug/2017 23:13:08] "GET /users/?format=api HTTP/1.1" 200 9860
+[06/Aug/2017 23:13:33] "POST /users/?format=api HTTP/1.1" 201 10105
+[06/Aug/2017 23:13:43] "GET /?format=api HTTP/1.1" 200 5428
