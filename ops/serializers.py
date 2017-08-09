@@ -13,11 +13,12 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         model = Group
         fields = ('url', 'name')
 
-#class CmdProtocolSerializer(serializers.HyperlinkedModelSerializer):
-#    class Meta:
-#        model = CmdProtocols
-#        fields = ('id', 'cmdprotocol', 'timestamp')
+class CmdSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Cmds
+        fields = ('id', 'cmdprotocol', 'cmdsystem', 'cmdset', 'cmdline', 'timestamp')
 
+"""
 class CmdSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     cmdprotocol = serializers.ChoiceField(choices=CMDPROTOCOL_CHOICES, default=0)
@@ -36,4 +37,4 @@ class CmdSerializer(serializers.Serializer):
         instance.cmdline = validated_data.get('cmdline', instance.cmdline)
         instance.save()
         return instance
-
+"""
