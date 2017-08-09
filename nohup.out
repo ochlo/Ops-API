@@ -322,3 +322,360 @@ Not Found: /ops
 [06/Aug/2017 23:13:08] "GET /users/?format=api HTTP/1.1" 200 9860
 [06/Aug/2017 23:13:33] "POST /users/?format=api HTTP/1.1" 201 10105
 [06/Aug/2017 23:13:43] "GET /?format=api HTTP/1.1" 200 5428
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 09, 2017 - 06:53:08
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 09, 2017 - 06:56:25
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f747008b848>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/api/ops/views.py", line 9, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/home/ochlo/py/api/ops/serializers.py", line 25
+    instance.cmdprotocol = validated_data.get('cmdprotocol' instance.cmdprotocol)
+                                                                   ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x7f3998bf8848>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/api/ops/views.py", line 9, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/home/ochlo/py/api/ops/serializers.py", line 25
+    instance.cmdprotocol = validated_data.get('cmdprotocol' instance.cmdprotocol)
+                                                                   ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x7f34d7403848>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/api/ops/views.py", line 9, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/home/ochlo/py/api/ops/serializers.py", line 25
+    instance.cmdprotocol = validated_data.get('cmdprotocol' instance.cmdprotocol)
+                                                                   ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x7f48432a2848>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/api/ops/views.py", line 9, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/home/ochlo/py/api/ops/serializers.py", line 25
+    instance.cmdprotocol = validated_data.get('cmdprotocol' instance.cmdprotocol)
+                                                                   ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x7fc21a26f848>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/api/ops/views.py", line 9, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/home/ochlo/py/api/ops/serializers.py", line 3, in <module>
+    from ops.models import CmdProtocols, CMDPROTOCOLS_CHOICES
+ImportError: cannot import name CMDPROTOCOLS_CHOICES
+Unhandled exception in thread started by <function wrapper at 0x7f6164022848>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/api/ops/views.py", line 9, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/home/ochlo/py/api/ops/serializers.py", line 16, in <module>
+    class CmdProtocolSerializer(serializers.Serializer):
+  File "/home/ochlo/py/api/ops/serializers.py", line 18, in CmdProtocolSerializer
+    cmdprotocol = serializers.CharField(choices=CMDPROTOCOLS_CHOICES)
+NameError: name 'CMDPROTOCOLS_CHOICES' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f16e84a1848>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/api/ops/views.py", line 9, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/home/ochlo/py/api/ops/serializers.py", line 3, in <module>
+    from ops.models import CmdProtocols, CMDPROTOCOLS_CHOICES
+ImportError: cannot import name CMDPROTOCOLS_CHOICES
+Unhandled exception in thread started by <function wrapper at 0x7f2e244d5848>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/api/ops/views.py", line 9, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/home/ochlo/py/api/ops/serializers.py", line 3, in <module>
+    from ops.models import CmdProtocols, CMDPROTOCOLS_CHOICES
+ImportError: cannot import name CMDPROTOCOLS_CHOICES
+Unhandled exception in thread started by <function wrapper at 0x7f4ad2f91848>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/api/ops/views.py", line 9, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/home/ochlo/py/api/ops/serializers.py", line 16, in <module>
+    class CmdProtocolSerializer(serializers.Serializer):
+  File "/home/ochlo/py/api/ops/serializers.py", line 18, in CmdProtocolSerializer
+    cmdprotocol = serializers.CharField(choices=CmdProtocols.CMDPROTOCOLS_CHOICES)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/fields.py", line 739, in __init__
+    super(CharField, self).__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'choices'

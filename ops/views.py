@@ -6,7 +6,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from ops.serializers import UserSerializer, GroupSerializer
+from ops.serializers import UserSerializer, GroupSerializer, CmdProtocolSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -23,3 +23,7 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+#class CmdProtocolViewSet(viewsets.ModelViewSet):
+#    queryset = CmdProtocols
+#    serializer_class = CmdProtocolSerializer
