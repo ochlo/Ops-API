@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
-#    'ops',
+    'ops.apps.OpsConfig',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
