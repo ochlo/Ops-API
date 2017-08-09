@@ -21,7 +21,7 @@ from ops import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
-router.register(r'ops', views.CmdProtocolsViewSet)
+#router.register(r'ops', views.CmdProtocolsViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
