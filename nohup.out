@@ -2081,3 +2081,12 @@ August 10, 2017 - 18:56:58
 Django version 1.11.3, using settings 'api.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
+[10/Aug/2017 19:03:33] "GET /commands/ HTTP/1.1" 200 11754
+[10/Aug/2017 19:03:38] "GET /commands/4/ HTTP/1.1" 200 12228
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 19:02:44
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
