@@ -679,3 +679,796 @@ Traceback (most recent call last):
   File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/fields.py", line 739, in __init__
     super(CharField, self).__init__(**kwargs)
 TypeError: __init__() got an unexpected keyword argument 'choices'
+Not Found: /ops/cmd/1/
+[10/Aug/2017 00:20:22] "GET /ops/cmd/1/ HTTP/1.1" 404 4786
+Not Found: /ops/cmd/2/
+[10/Aug/2017 00:20:33] "GET /ops/cmd/2/ HTTP/1.1" 404 4786
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:20:37] "GET /ops/cmd/ HTTP/1.1" 500 112516
+Not Found: /ops/
+[10/Aug/2017 00:20:45] "GET /ops/ HTTP/1.1" 404 4768
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 00:20:21
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:22:01] "GET /ops/cmd/ HTTP/1.1" 500 112651
+[10/Aug/2017 00:22:05] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:22:05] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:22:11] "GET /ops/cmd/ HTTP/1.1" 500 112668
+[10/Aug/2017 00:22:21] "OPTIONS /ops/cmd/1/ HTTP/1.1" 200 8467
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 00:21:59
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:23:48] "GET /ops/cmd/ HTTP/1.1" 500 112668
+[10/Aug/2017 00:23:52] "GET / HTTP/1.1" 200 5320
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:23:58] "GET /ops/cmd/ HTTP/1.1" 500 112668
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 00:23:46
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 00:24:07
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[10/Aug/2017 00:24:29] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:29] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 00:24:34] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 00:24:35] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 00:24:27
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[10/Aug/2017 00:24:47] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:47] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:48] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:50] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:52] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 00:24:53] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+[10/Aug/2017 00:24:53] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:53] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:53] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:54] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 00:24:54] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:54] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:54] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:54] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:54] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:54] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 00:24:54] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 00:24:57] "GET /ops/cmd/2/ HTTP/1.1" 200 8337
+[10/Aug/2017 00:25:02] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:25:08] "GET /ops/cmd/ HTTP/1.1" 500 112516
+[10/Aug/2017 00:25:11] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+[10/Aug/2017 00:25:11] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 00:25:11] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 00:25:11] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 00:25:11] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:25:12] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 00:25:12] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 00:25:12] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 00:25:12] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:25:12] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 00:25:12] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 00:25:12] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:25:15] "GET /ops/cmd/ HTTP/1.1" 500 112651
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:27:05] "GET /ops/cmd/ HTTP/1.1" 500 112651
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 00:24:43
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:28:46] "GET /ops/cmd/ HTTP/1.1" 500 111467
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:28:51] "GET /ops/cmd/ HTTP/1.1" 500 111467
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'ModelBase' object is not iterable
+[10/Aug/2017 00:28:53] "GET /ops/cmd/ HTTP/1.1" 500 111467
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 00:28:43
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 00:29:06
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 534, in data
+    ret = super(Serializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 501, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/fields.py", line 913, in to_representation
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'DeferredAttribute'
+[10/Aug/2017 00:34:20] "GET /ops/cmd/ HTTP/1.1" 500 118116
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 534, in data
+    ret = super(Serializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 501, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/fields.py", line 913, in to_representation
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'DeferredAttribute'
+[10/Aug/2017 00:34:23] "GET /ops/cmd/ HTTP/1.1" 500 118116
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 534, in data
+    ret = super(Serializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 501, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/fields.py", line 913, in to_representation
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'DeferredAttribute'
+[10/Aug/2017 00:34:26] "GET /ops/cmd/ HTTP/1.1" 500 118116
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 534, in data
+    ret = super(Serializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 501, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/fields.py", line 913, in to_representation
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'DeferredAttribute'
+[10/Aug/2017 00:34:30] "GET /ops/cmd/ HTTP/1.1" 500 118116
+[10/Aug/2017 00:35:55] "GET /ops/cmd/1/ HTTP/1.1" 200 8347
+[10/Aug/2017 00:36:02] "DELETE /ops/cmd/1/ HTTP/1.1" 200 8114
+[10/Aug/2017 00:36:07] "GET /ops/cmd/2/ HTTP/1.1" 200 8337
+[10/Aug/2017 00:36:24] "PUT /ops/cmd/2/ HTTP/1.1" 400 8279
+[10/Aug/2017 00:36:39] "PUT /ops/cmd/2/ HTTP/1.1" 400 8279
+[10/Aug/2017 00:36:56] "PUT /ops/cmd/2/ HTTP/1.1" 200 8343
+[10/Aug/2017 00:37:22] "PUT /ops/cmd/2/ HTTP/1.1" 200 8345
+Internal Server Error: /ops/cmd/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/decorators.py", line 52, in handler
+    return func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 45, in cmds_list
+    return Response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 534, in data
+    ret = super(Serializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 501, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/fields.py", line 913, in to_representation
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'DeferredAttribute'
+[10/Aug/2017 00:37:29] "GET /ops/cmd/ HTTP/1.1" 500 117954
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 00:34:18
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 00:37:37
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f23c1dae050>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 44
+    serializer = CmdSerializer(Cmds) , many=True)
+                                                ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x7fa01b35a050>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 44
+    serializer = CmdSerializer(Cmds), many=True)
+                                               ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x7f80f43ab050>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 44
+    serializer = CmdSerializer(Cmds)) #, many=True)
+                                    ^
+SyntaxError: invalid syntax

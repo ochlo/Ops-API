@@ -38,7 +38,7 @@ class GroupViewSet(viewsets.ModelViewSet):
 
 @api_view(['GET', 'POST'])
 def cmds_list(request, format=None):
-#    List all CmdS, or create a new cmds.
+#    List all, or create a new.
     if request.method == 'GET':
         cmds = Cmds.objects.all()
         serializer = CmdSerializer(Cmds, many=True)
