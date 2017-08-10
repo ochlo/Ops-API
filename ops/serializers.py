@@ -16,7 +16,7 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class CmdSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Cmds
-        fields = ('id', 'cmdprotocol', 'cmdsystem', 'cmdset', 'cmdline', 'timestamp')
+        fields = ('url', 'cmdprotocol', 'cmdsystem', 'cmdset', 'cmdline', 'timestamp')
 
 """
 class CmdSerializer(serializers.Serializer):

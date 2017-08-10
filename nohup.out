@@ -1571,3 +1571,82 @@ Not Found: /commands/1/
 Not Found: /commands/1/
 [10/Aug/2017 17:59:00] "PUT /commands/1/ HTTP/1.1" 404 11567
 [10/Aug/2017 17:59:07] "GET /commands/2/ HTTP/1.1" 200 11888
+Not Found: /commands/1/
+[10/Aug/2017 18:00:05] "GET /commands/1/ HTTP/1.1" 404 11567
+Not Found: /commands/1/
+[10/Aug/2017 18:00:46] "PUT /commands/1/ HTTP/1.1" 404 11567
+Not Found: /commands/1/
+[10/Aug/2017 18:01:02] "PATCH /commands/1/ HTTP/1.1" 404 11569
+[10/Aug/2017 18:01:15] "GET /commands/ HTTP/1.1" 200 10626
+[10/Aug/2017 18:01:44] "POST /commands/ HTTP/1.1" 201 10493
+[10/Aug/2017 18:02:47] "GET /commands/3 HTTP/1.1" 301 0
+[10/Aug/2017 18:02:48] "GET /commands/3/ HTTP/1.1" 200 11898
+[10/Aug/2017 18:02:54] "DELETE /commands/3/ HTTP/1.1" 200 11521
+[10/Aug/2017 18:03:01] "GET /commands/ HTTP/1.1" 200 10626
+[10/Aug/2017 18:03:11] "GET /commands/ HTTP/1.1" 200 10626
+[10/Aug/2017 18:03:39] "POST /commands/ HTTP/1.1" 201 10491
+[10/Aug/2017 18:03:44] "GET /commands/ HTTP/1.1" 200 10936
+[10/Aug/2017 18:04:05] "OPTIONS /commands/ HTTP/1.1" 200 14296
+[10/Aug/2017 18:04:20] "GET /commands/ HTTP/1.1" 200 10936
+[10/Aug/2017 18:04:35] "GET / HTTP/1.1" 200 5452
+[10/Aug/2017 18:04:38] "GET /users/ HTTP/1.1" 200 10156
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 17:58:17
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[10/Aug/2017 18:08:42] "GET / HTTP/1.1" 200 5452
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.Cmds'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 18:08:45] "GET /commands/ HTTP/1.1" 200 10936
+[10/Aug/2017 18:13:36] "GET / HTTP/1.1" 200 5452
+[10/Aug/2017 18:13:42] "GET /commands/ HTTP/1.1" 200 10936
+[10/Aug/2017 18:14:45] "POST /commands/ HTTP/1.1" 201 10516
+[10/Aug/2017 18:14:50] "GET /commands/ HTTP/1.1" 200 11259
+[10/Aug/2017 18:14:58] "GET /commands/5 HTTP/1.1" 301 0
+[10/Aug/2017 18:14:58] "GET /commands/5/ HTTP/1.1" 200 11933
+[10/Aug/2017 18:15:04] "PUT /commands/5/ HTTP/1.1" 200 11925
+[10/Aug/2017 18:15:19] "GET /commands/ HTTP/1.1" 200 11256
+[10/Aug/2017 18:15:20] "GET / HTTP/1.1" 200 5452
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'django.contrib.auth.models.Group'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 18:15:23] "GET /groups/ HTTP/1.1" 200 8749
+[10/Aug/2017 18:15:25] "GET /groups/1/ HTTP/1.1" 200 9991
+[10/Aug/2017 18:15:30] "GET / HTTP/1.1" 200 5452
+[10/Aug/2017 18:15:32] "GET /commands/ HTTP/1.1" 200 11256
+[10/Aug/2017 18:16:14] "GET /commands/5/ HTTP/1.1" 200 11925
+[10/Aug/2017 18:16:25] "GET / HTTP/1.1" 200 5452
+[10/Aug/2017 18:16:27] "GET /users/ HTTP/1.1" 200 10156
+[10/Aug/2017 18:16:29] "GET /users/2/ HTTP/1.1" 200 11137
+[10/Aug/2017 18:16:54] "GET / HTTP/1.1" 200 5452
+[10/Aug/2017 18:17:49] "GET /commands/ HTTP/1.1" 200 11256
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 18:08:34
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.Cmds'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 18:18:39] "GET /commands/ HTTP/1.1" 200 11418
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 18:18:39] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 18:18:37
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
