@@ -16,11 +16,13 @@ CMDPROTOCOL_CHOICES = (
 
 CMDSYSTEM_CHOICES = (
     (0,''),
-    (1,'AMS5520'),
-    (2,'AXSVision'),
-    (3,'Calix'),
+    (1,'Nokia AMS5520'),
+    (2,'Arris AXSVision'),
+    (3,'Calix CMS'),
     (4,'JunOS'),
     (5,'JunOSe'),
+    (6,'RedHat'),
+    (7,'Tellabs Panorama'),
 )
 
 class Cmds(models.Model):
