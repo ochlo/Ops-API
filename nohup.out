@@ -3301,3 +3301,10 @@ AttributeError: 'module' object has no attribute 'JunOSViewSet'
   paginator = self.django_paginator_class(queryset, page_size)
 [10/Aug/2017 23:23:11] "GET /junos/ HTTP/1.1" 200 9414
 [10/Aug/2017 23:23:17] "GET / HTTP/1.1" 200 5569
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:23:07
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
