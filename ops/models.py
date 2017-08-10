@@ -13,6 +13,7 @@ CMDPROTOCOL_CHOICES = (
     (4,'TL1'),
     (5,'SSH'),
 )
+
 CMDSYSTEM_CHOICES = (
     (0,''),
     (1,'AMS5520'),
