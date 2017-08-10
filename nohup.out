@@ -1650,3 +1650,41 @@ August 10, 2017 - 18:18:37
 Django version 1.11.3, using settings 'api.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.Cmds'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 18:28:51] "GET /commands/ HTTP/1.1" 200 11418
+[10/Aug/2017 18:28:54] "GET /commands/ HTTP/1.1" 200 11418
+[10/Aug/2017 18:28:55] "GET /commands/ HTTP/1.1" 200 11418
+[10/Aug/2017 18:28:55] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 18:28:55] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 18:28:55] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 18:28:55] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 18:28:55] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 18:28:55] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 18:28:55] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 18:28:55] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 18:28:55] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 18:28:55] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 18:28:56] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 18:24:10
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 18:44:35
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[10/Aug/2017 18:45:56] "GET /commands/ HTTP/1.1" 200 11580
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 18:45:55
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.

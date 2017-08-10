@@ -40,7 +40,7 @@ class CmdsViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows cmds to be viewed or edited.
     """
-    queryset = Cmds.objects.all()
+    queryset = Cmds.objects.all().order_by('cmdsystem','cmdset')
     serializer_class = CmdSerializer
 
 @api_view(['GET', 'POST'])

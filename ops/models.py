@@ -23,7 +23,6 @@ CMDSYSTEM_CHOICES = (
 )
 
 class Cmds(models.Model):
-    url = r'^{prefix}$',
     cmdprotocol = models.CharField(max_length=255, choices=CMDPROTOCOL_CHOICES, default=0)
     cmdsystem = models.CharField(max_length=255, choices=CMDSYSTEM_CHOICES, default=0)
     cmdset = models.CharField(max_length=255, default='')
