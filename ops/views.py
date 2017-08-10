@@ -36,12 +36,19 @@ class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
 
+class CmdsViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows cmds to be viewed or edited.
+    """
+    queryset = Cmds.objects.all()
+    serializer_class = CmdSerializer
+
 @api_view(['GET', 'POST'])
 def cmds_list(request, format=None):
 #    List all, or create a new.
     if request.method == 'GET':
         cmds = Cmds.objects.all()
-        serializer = CmdSerializer(Cmds, many=True)
+        serializer = CmdSerializer(cmds, many=True)
         return Response(serializer.data)
 
     elif request.method == 'POST':
@@ -55,7 +62,7 @@ def cmds_list(request, format=None):
 def cmds_detail(request, pk, format=None):
     #Retrieve, update or delete a cmds instance.
     try:
-        cmds = Cmds.objects.get(pk=pk)
+        cmds = cmds.objects.get(pk=pk)
     except cmds.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 

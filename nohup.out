@@ -1472,3 +1472,102 @@ Traceback (most recent call last):
     serializer = CmdSerializer(Cmds)) #, many=True)
                                     ^
 SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "manage.py", line 17, in <module>
+    "Couldn't import Django. Are you sure it's installed and "
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+Error: That port is already in use.
+[10/Aug/2017 17:49:13] "GET /ops/cmd HTTP/1.1" 301 0
+[10/Aug/2017 17:49:13] "GET /ops/cmd/ HTTP/1.1" 403 4750
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1132
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 2876
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+[10/Aug/2017 17:49:14] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+[10/Aug/2017 17:49:14] "GET /favicon.ico HTTP/1.1" 404 4151
+Not Found: /favicon.ico
+[10/Aug/2017 17:49:14] "GET /favicon.ico HTTP/1.1" 404 4151
+[10/Aug/2017 17:49:17] "GET /api-auth/login/?next=/ops/cmd/ HTTP/1.1" 200 2702
+[10/Aug/2017 17:49:23] "POST /api-auth/login/ HTTP/1.1" 302 0
+[10/Aug/2017 17:49:23] "GET /ops/cmd/ HTTP/1.1" 200 7094
+[10/Aug/2017 17:49:55] "POST /ops/cmd/ HTTP/1.1" 400 4855
+[10/Aug/2017 17:50:11] "GET /ops/cmd/ HTTP/1.1" 200 7094
+[10/Aug/2017 17:50:25] "POST /ops/cmd/ HTTP/1.1" 400 4855
+[10/Aug/2017 17:50:48] "GET / HTTP/1.1" 200 5320
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 17:49:04
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 17:57:07
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7fefb550e050>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 24, in <module>
+    router.register(r'commands', views.CmdViewSet)
+AttributeError: 'module' object has no attribute 'CmdViewSet'
+[10/Aug/2017 17:58:18] "GET / HTTP/1.1" 200 5452
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 17:58:18] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.Cmds'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 17:58:21] "GET /commands/ HTTP/1.1" 200 10626
+[10/Aug/2017 17:58:30] "GET /commands/ HTTP/1.1" 200 10626
+[10/Aug/2017 17:58:34] "GET /commands/ HTTP/1.1" 200 10626
+[10/Aug/2017 17:58:38] "GET /commands/1 HTTP/1.1" 301 0
+Not Found: /commands/1/
+[10/Aug/2017 17:58:38] "GET /commands/1/ HTTP/1.1" 404 11567
+Not Found: /commands/1/
+[10/Aug/2017 17:59:00] "PUT /commands/1/ HTTP/1.1" 404 11567
+[10/Aug/2017 17:59:07] "GET /commands/2/ HTTP/1.1" 200 11888
