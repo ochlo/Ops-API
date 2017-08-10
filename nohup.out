@@ -2090,3 +2090,1214 @@ August 10, 2017 - 19:02:44
 Django version 1.11.3, using settings 'api.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/__init__.py", line 363, in execute_from_command_line
+    utility.execute()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/__init__.py", line 317, in execute
+    autoreload.check_errors(django.setup)()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.ready()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/contrib/admin/apps.py", line 23, in ready
+    self.module.autodiscover()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/module_loading.py", line 50, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+KeyboardInterrupt
+[10/Aug/2017 22:27:23] "GET / HTTP/1.1" 200 5446
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 22:27:23] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.RedHat'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 22:27:25] "GET /redhat/ HTTP/1.1" 200 9461
+[10/Aug/2017 22:27:40] "POST /redhat/ HTTP/1.1" 201 9754
+[10/Aug/2017 22:27:46] "POST /redhat/ HTTP/1.1" 201 9754
+[10/Aug/2017 22:27:53] "POST /redhat/ HTTP/1.1" 201 9754
+[10/Aug/2017 22:27:59] "GET /redhat/ HTTP/1.1" 200 10374
+[10/Aug/2017 22:28:02] "GET /redhat/3/ HTTP/1.1" 200 11062
+[10/Aug/2017 22:28:07] "DELETE /redhat/3/ HTTP/1.1" 200 10676
+[10/Aug/2017 22:29:04] "GET /redhat/ HTTP/1.1" 200 10071
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 22:27:22
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f65307a90c8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 40, in <module>
+    class SSHViewSet(viewsets.ModelViewSet):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 44, in SSHViewSet
+    queryset = SSH.objects.all() #.order_by('','')
+NameError: name 'SSH' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f345cbc50c8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 10, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/serializers.py", line 23, in <module>
+    class SSHSerializer(serializers.HyperlinkedModelSerializer):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/serializers.py", line 24, in SSHSerializer
+    class Meta:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/serializers.py", line 25, in Meta
+    model = SSH
+NameError: name 'SSH' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f42af1b3668>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 38, in <module>
+    class SSH(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 44, in SSH
+    redhat = models.CharField(max_length=25, choices=REDHAT_CHOICES, default=1)
+NameError: name 'REDHAT_CHOICES' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7fe78d642668>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 38, in <module>
+    class SSH(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 44, in SSH
+    redhat = models.CharField(max_length=25, choices=REDHAT_CHOICES, default=1)
+NameError: name 'REDHAT_CHOICES' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7fc1625ce668>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 38, in <module>
+    class SSH(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 44, in SSH
+    redhat = models.CharField(max_length=25, choices=REDHAT_CHOICES, default=1)
+NameError: name 'REDHAT_CHOICES' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f6cd2e155f0>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 38, in <module>
+    class SSH(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 44, in SSH
+    port = models.IntegerField(max_value=65535, default=22)
+TypeError: __init__() got an unexpected keyword argument 'max_value'
+Unhandled exception in thread started by <function wrapper at 0x7f7c5fcd55f0>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 38, in <module>
+    class SSH(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 44, in SSH
+    port = models.IntegerField(max=65535, default=22)
+TypeError: __init__() got an unexpected keyword argument 'max'
+Unhandled exception in thread started by <function wrapper at 0x7f821a8f7398>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 40, in <module>
+    class SSHViewSet(viewsets.ModelViewSet):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 44, in SSHViewSet
+    queryset = SSH.objects.all() #.order_by('','')
+NameError: name 'SSH' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f140bccb398>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 40, in <module>
+    class SSHViewSet(viewsets.ModelViewSet):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 44, in SSHViewSet
+    queryset = SSH.objects.all() #.order_by('','')
+NameError: name 'SSH' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f2db34b3398>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 40, in <module>
+    class SSHViewSet(viewsets.ModelViewSet):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 44, in SSHViewSet
+    queryset = SSH.objects.all() #.order_by('','')
+NameError: name 'SSH' is not defined
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W002) Your URL pattern '^/ssh/$' [name='ssh-list'] has a regex beginning with a '/'. Remove this slash as it is unnecessary. If this pattern is targeted in an include(), ensure the include() pattern has a trailing '/'.
+?: (urls.W002) Your URL pattern '^/ssh/(?P<pk>[^/.]+)/$' [name='ssh-detail'] has a regex beginning with a '/'. Remove this slash as it is unnecessary. If this pattern is targeted in an include(), ensure the include() pattern has a trailing '/'.
+?: (urls.W002) Your URL pattern '^/ssh/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$' [name='ssh-detail'] has a regex beginning with a '/'. Remove this slash as it is unnecessary. If this pattern is targeted in an include(), ensure the include() pattern has a trailing '/'.
+?: (urls.W002) Your URL pattern '^/ssh\.(?P<format>[a-z0-9]+)/?$' [name='ssh-list'] has a regex beginning with a '/'. Remove this slash as it is unnecessary. If this pattern is targeted in an include(), ensure the include() pattern has a trailing '/'.
+
+System check identified 4 issues (0 silenced).
+[10/Aug/2017 22:43:09] "GET /redhat/ssh HTTP/1.1" 301 0
+Not Found: /redhat/ssh/
+[10/Aug/2017 22:43:09] "GET /redhat/ssh/ HTTP/1.1" 404 10742
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:43:09] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Not Found: /ssh/
+[10/Aug/2017 22:43:22] "GET /ssh/ HTTP/1.1" 404 5738
+Performing system checks...
+
+August 10, 2017 - 22:43:02
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.SSH'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+Internal Server Error: /ssh/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 86, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 42, in list
+    page = self.paginate_queryset(queryset)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/generics.py", line 173, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py", line 214, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/paginator.py", line 57, in page
+    number = self.validate_number(number)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/paginator.py", line 46, in validate_number
+    if number > self.num_pages:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/paginator.py", line 91, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 886, in execute_sql
+    raise original_exception
+OperationalError: no such table: ops_ssh
+[10/Aug/2017 22:43:39] "GET /ssh/ HTTP/1.1" 500 145981
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 22:43:38
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.SSH'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+Internal Server Error: /ssh/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 86, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 42, in list
+    page = self.paginate_queryset(queryset)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/generics.py", line 173, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py", line 214, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/paginator.py", line 57, in page
+    number = self.validate_number(number)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/paginator.py", line 46, in validate_number
+    if number > self.num_pages:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/paginator.py", line 91, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 886, in execute_sql
+    raise original_exception
+OperationalError: no such table: ops_ssh
+[10/Aug/2017 22:44:16] "GET /ssh/ HTTP/1.1" 500 145981
+[10/Aug/2017 22:44:40] "GET /ssh/ HTTP/1.1" 200 8492
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:44:40] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 22:44:49] "POST /ssh/ HTTP/1.1" 201 8737
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 22:44:13
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.SSH'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 22:47:07] "GET /ssh/ HTTP/1.1" 200 8755
+[10/Aug/2017 22:47:13] "GET /ssh/ HTTP/1.1" 200 8755
+[10/Aug/2017 22:47:15] "GET / HTTP/1.1" 200 5563
+[10/Aug/2017 22:47:17] "GET /ssh/ HTTP/1.1" 200 8755
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 22:46:48
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.SSH'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 22:47:50] "GET /ssh/ HTTP/1.1" 200 9371
+[10/Aug/2017 22:47:50] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 22:47:50] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:47:50] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 22:47:50] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 22:47:50] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 22:47:50] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 22:47:50] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 22:47:50] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:47:50] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 22:47:50] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:47:51] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 22:47:52] "GET /ssh/1/ HTTP/1.1" 200 10643
+[10/Aug/2017 22:47:56] "PUT /ssh/1/ HTTP/1.1" 200 10643
+[10/Aug/2017 22:48:15] "GET /ssh/ HTTP/1.1" 200 9371
+[10/Aug/2017 22:48:24] "GET / HTTP/1.1" 200 5563
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 22:47:42
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[10/Aug/2017 22:48:41] "GET / HTTP/1.1" 200 5584
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 22:48:41] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+Not Found: /redhat/ssh/
+[10/Aug/2017 22:48:43] "GET /redhat/ssh/ HTTP/1.1" 404 10742
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 22:48:40
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.RedHat'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 22:49:03] "GET /redhat/ HTTP/1.1" 200 10071
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 22:49:03] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 22:49:06] "GET / HTTP/1.1" 200 5563
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 22:49:01
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/routers.py", line 299, in get
+    format=kwargs.get('format', None)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/reverse.py", line 50, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/reverse.py", line 63, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 436, in _reverse_with_prefix
+    self._populate()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 301, in _populate
+    for name in pattern.reverse_dict:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 334, in reverse_dict
+    self._populate()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 320, in _populate
+    bits = normalize(p_pattern)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/regex_helper.py", line 175, in normalize
+    count, ch = get_quantifier(ch, pattern_iter)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/regex_helper.py", line 288, in get_quantifier
+    return int(values[0]), ch
+ValueError: invalid literal for int() with base 10: 'basename'
+[10/Aug/2017 22:58:30] "GET / HTTP/1.1" 500 140780
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 22:58:12
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[10/Aug/2017 23:00:06] "GET / HTTP/1.1" 200 5071
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 23:00:06] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[10/Aug/2017 23:00:10] "GET / HTTP/1.1" 200 5071
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:00:03
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/routers.py", line 299, in get
+    format=kwargs.get('format', None)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/reverse.py", line 50, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/reverse.py", line 63, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 436, in _reverse_with_prefix
+    self._populate()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 301, in _populate
+    for name in pattern.reverse_dict:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 334, in reverse_dict
+    self._populate()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 320, in _populate
+    bits = normalize(p_pattern)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/regex_helper.py", line 175, in normalize
+    count, ch = get_quantifier(ch, pattern_iter)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/regex_helper.py", line 288, in get_quantifier
+    return int(values[0]), ch
+ValueError: invalid literal for int() with base 10: 'basename'
+[10/Aug/2017 23:00:28] "GET / HTTP/1.1" 500 140765
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:00:26
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[10/Aug/2017 23:01:43] "GET / HTTP/1.1" 200 5557
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:01:43] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.SSH'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+Internal Server Error: /ssh/
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 86, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 501, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/relations.py", line 390, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "ssh-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+[10/Aug/2017 23:01:51] "GET /ssh/ HTTP/1.1" 500 121745
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:01:41
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[10/Aug/2017 23:02:22] "GET / HTTP/1.1" 200 5592
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 23:02:22] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Not Found: /redhat/ssh/
+[10/Aug/2017 23:02:24] "GET /redhat/ssh/ HTTP/1.1" 404 10742
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.RedHat'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 23:02:32] "GET /redhat/ HTTP/1.1" 200 10087
+[10/Aug/2017 23:02:37] "GET / HTTP/1.1" 200 5592
+Not Found: /redhat/ssh/
+[10/Aug/2017 23:02:40] "GET /redhat/ssh/ HTTP/1.1" 404 10742
+[10/Aug/2017 23:02:42] "GET /redhat/ HTTP/1.1" 200 10087
+[10/Aug/2017 23:03:33] "GET / HTTP/1.1" 200 5592
+Not Found: /redhat/ssh/
+[10/Aug/2017 23:03:37] "GET /redhat/ssh/ HTTP/1.1" 404 10742
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:02:20
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7fc59c788410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 13, in <module>
+    from ops.serializers import RedHatSerializer, SSHSerializer
+ImportError: cannot import name SSHSerializer
+Unhandled exception in thread started by <function wrapper at 0x7ffbb3b45410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 10, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/serializers.py", line 3, in <module>
+    from ops.models import RedHat, SSH
+ImportError: cannot import name SSH
+Unhandled exception in thread started by <function wrapper at 0x7fdec99d0410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 10, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/serializers.py", line 17, in <module>
+    class RedHatSerializer(serializers.HyperlinkedModelSerializer):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/serializers.py", line 23, in RedHatSerializer
+    class SSHSerializer(serializers.HyperlinkedModelSerializer):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/serializers.py", line 24, in SSHSerializer
+    class Meta:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/serializers.py", line 25, in Meta
+    model = SSH
+NameError: name 'SSH' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f5c4ee96410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 10, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/serializers.py", line 3, in <module>
+    from ops.models import RedHat, SSH
+ImportError: cannot import name SSH
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:06:37
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.RedHat'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 23:07:27] "GET /redhat/ HTTP/1.1" 200 10071
+[10/Aug/2017 23:07:30] "GET / HTTP/1.1" 200 5563
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.SSH'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 23:07:31] "GET /ssh/ HTTP/1.1" 200 9371
+[10/Aug/2017 23:07:33] "GET / HTTP/1.1" 200 5563
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:07:23
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7feac68c5410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 40, in <module>
+    class JunOSViewSet(viewsets.ModelViewSet):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 44, in JunOSViewSet
+    queryset = JunOS.objects.all() #.order_by('','')
+NameError: name 'JunOS' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f4222707410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 10, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/serializers.py", line 3, in <module>
+    from ops.models import RedHat, JunOS
+ImportError: cannot import name JunOS
+Unhandled exception in thread started by <function wrapper at 0x7f73ecab0410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 12, in <module>
+    from ops.models import RedHat, SSH
+ImportError: cannot import name SSH
+Unhandled exception in thread started by <function wrapper at 0x7f75efb46410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 12, in <module>
+    from ops.models import RedHat, SSH
+ImportError: cannot import name SSH
+[10/Aug/2017 23:21:37] "GET / HTTP/1.1" 200 5569
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:21:37] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.JunOS'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 23:21:40] "GET /junos/ HTTP/1.1" 200 9118
+[10/Aug/2017 23:21:49] "POST /junos/ HTTP/1.1" 201 9409
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:21:10
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f77e2d75410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/views.py", line 12, in <module>
+    from ops.models import RedHat, Junos
+ImportError: cannot import name Junos
+Unhandled exception in thread started by <function wrapper at 0x7f9a0f50c410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 25, in <module>
+    router.register(r'junos', views.JunOSViewSet)
+AttributeError: 'module' object has no attribute 'JunOSViewSet'
+[10/Aug/2017 23:23:09] "GET / HTTP/1.1" 200 5569
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[10/Aug/2017 23:23:09] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.Junos'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 23:23:11] "GET /junos/ HTTP/1.1" 200 9414
+[10/Aug/2017 23:23:17] "GET / HTTP/1.1" 200 5569

@@ -9,12 +9,12 @@ from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from ops.serializers import UserSerializer, GroupSerializer
 #Commands
-from ops.models import Cmds
-from ops.serializers import CmdSerializer
+from ops.models import RedHat, Junos
+from ops.serializers import RedHatSerializer, JunosSerializer
 #Depends
-from rest_framework import status
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
+#from rest_framework import status
+#from rest_framework.decorators import api_view
+#from rest_framework.response import Response
 
 class UserViewSet(viewsets.ModelViewSet):
     """
@@ -30,9 +30,17 @@ class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
 
-class CmdsViewSet(viewsets.ModelViewSet):
+class RedHatViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows cmds to be viewed or edited.
     """
-    queryset = Cmds.objects.all().order_by('cmdsystem','cmdset')
-    serializer_class = CmdSerializer
+    queryset = RedHat.objects.all() #.order_by('','')
+    serializer_class = RedHatSerializer
+
+class JunosViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows cmds to be viewed or edited.
+    """
+    queryset = Junos.objects.all() #.order_by('','')
+    serializer_class = JunosSerializer
+
