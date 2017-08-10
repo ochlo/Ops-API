@@ -27,5 +27,5 @@ class Cmds(models.Model):
     cmdprotocol = models.CharField(max_length=255, choices=CMDPROTOCOL_CHOICES, default=0)
     cmdsystem = models.CharField(max_length=255, choices=CMDSYSTEM_CHOICES, default=0)
     cmdset = models.CharField(max_length=255, default='')
-    cmdline = models.CharField(max_length=255, default='\n')
+    cmdline = models.CharField(max_length=255, default='')
     timestamp = models.DateTimeField(auto_now_add=True)

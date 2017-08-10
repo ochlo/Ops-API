@@ -1975,3 +1975,81 @@ Traceback (most recent call last):
   File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/urls.py", line 6, in <module>
     url(r'^cmd/$', views.cmds_list),
 AttributeError: 'module' object has no attribute 'cmds_list'
+Unhandled exception in thread started by <function wrapper at 0x7ff8fe65f050>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 30, in <module>
+    url(r'^ops/', include('ops.urls')),
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/urls.py", line 6, in <module>
+    url(r'^cmd/$', views.cmds_list),
+AttributeError: 'module' object has no attribute 'cmds_list'
+Unhandled exception in thread started by <function wrapper at 0x7fd4d4979050>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/api/urls.py", line 30, in <module>
+    url(r'^ops/', include('ops.urls')),
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/urls.py", line 6, in <module>
+    url(r'^cmd/$', views.cmds_list),
+AttributeError: 'module' object has no attribute 'cmds_list'
