@@ -3308,3 +3308,210 @@ August 10, 2017 - 23:23:07
 Django version 1.11.3, using settings 'api.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
+/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.Junos'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[10/Aug/2017 23:29:36] "GET /junos/ HTTP/1.1" 200 9414
+[10/Aug/2017 23:30:59] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:28:14
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:39:04
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 10, 2017 - 23:39:21
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f03610f08c0>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 8, in <module>
+    class RedHat(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 15, in RedHat
+    protocol = models.CharField(max_length=25, choices=PROTOCOL_CHOICES, default=0)
+NameError: name 'PROTOCOL_CHOICES' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f236b8c18c0>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 8, in <module>
+    class RedHat(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 16, in RedHat
+    redhat = models.CharField(max_length=25, choices=REDHAT_CHOICES, default=1)
+NameError: name 'REDHAT_CHOICES' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7fee57d218c0>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 8, in <module>
+    class RedHat(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 16, in RedHat
+    redhat = models.CharField(max_length=25, choices=REDHAT_CHOICES, default=1)
+NameError: name 'REDHAT_CHOICES' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7efca3883848>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 8, in <module>
+    class RedHat(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 17, in RedHat
+    protocol = models.ChoiceField(choices=PROTOCOL_CHOICES)
+AttributeError: 'module' object has no attribute 'ChoiceField'
+Unhandled exception in thread started by <function wrapper at 0x7fd20d901848>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 8, in <module>
+    class RedHat(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 17, in RedHat
+    protocol = models.ChoiceField(choices=PROTOCOL_CHOICES)
+AttributeError: 'module' object has no attribute 'ChoiceField'
+Unhandled exception in thread started by <function wrapper at 0x7f6049909848>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 8, in <module>
+    class RedHat(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 17, in RedHat
+    protocol = models.ChoiceField(PROTOCOL_CHOICES)
+AttributeError: 'module' object has no attribute 'ChoiceField'
+Unhandled exception in thread started by <function wrapper at 0x7f13e7828848>
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 8, in <module>
+    class RedHat(models.Model):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/netops-api/ops/models.py", line 10, in RedHat
+    protocol = models.ChoiceField(
+AttributeError: 'module' object has no attribute 'ChoiceField'
+Unhandled exception in thread started by <function wrapper at 0x7fcdf26d2320>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/media/ubuntu/OSDisk/Users/jason.c.brown/Desktop/git/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 405, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+ops.Junos.ip: (fields.E900) IPAddressField has been removed except for support in historical migrations.
+	HINT: Use GenericIPAddressField instead.
+ops.Junos.protocol: (fields.E120) CharFields must define a 'max_length' attribute.
+ops.RedHat.ip: (fields.E900) IPAddressField has been removed except for support in historical migrations.
+	HINT: Use GenericIPAddressField instead.
+ops.RedHat.protocol: (fields.E120) CharFields must define a 'max_length' attribute.
+
+System check identified 4 issues (0 silenced).

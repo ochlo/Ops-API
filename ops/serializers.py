@@ -17,10 +17,11 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class RedHatSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = RedHat
-        #fields = ('url', 'cmdprotocol', 'cmdsystem', 'cmdset', 'cmdline', 'timestamp')
-        fields = ('url', 'redhat', 'protocol', 'timestamp')
+        fields = ('url', 'hostname', 'ip', 'timestamp')
 
 class JunosSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Junos
-        fields = ('url', 'transport', 'port', 'timestamp')
+        fields = ('url', 'hostname', 'ip', 'timestamp')
+
+#fields = ('url', 'cmdprotocol', 'cmdsystem', 'cmdset', 'cmdline', 'timestamp', 'port', 'protocol', 

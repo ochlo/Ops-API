@@ -43,4 +43,5 @@ class JunosViewSet(viewsets.ModelViewSet):
     """
     queryset = Junos.objects.all() #.order_by('','')
     serializer_class = JunosSerializer
+    lookup_field = 'protocol'
 

@@ -5,6 +5,32 @@ from django.db import models
 
 # Create your models here.
 
+class RedHat(models.Model):
+    PROTOCOL_CHOICES = (
+        #(0,''),
+        (1,'REST API'),
+        (2,'SOAP'),
+        (3,'Telnet'),
+        (4,'SSH'),
+    )
+    ip = models.IPAddressField()
+    protocol = models.CharField(choices=PROTOCOL_CHOICES)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+class Junos(models.Model):
+    PROTOCOL_CHOICES = (
+        #(0,''),
+        (1,'Netconf'),
+        (2,'Telnet'),
+        (3,'TL1'),
+        (4,'SSH'),
+    )
+    ip = models.IPAddressField()
+    protocol = models.CharField(choices=PROTOCOL_CHOICES)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+"""
+
 PROTOCOL_CHOICES = (
     (0,''),
     (1,'REST API'),
@@ -24,30 +50,6 @@ SYSTEM_CHOICES = (
     (6,'RedHat'),
     (7,'Tellabs Panorama'),
 )
-
-class RedHat(models.Model):
-    REDHAT_CHOICES = (
-        #(0,''),
-        (1,'Red Hat'),
-        (2,'CentOS'),
-    )
-    redhat = models.CharField(max_length=25, choices=REDHAT_CHOICES, default=1)
-    protocol = models.CharField(max_length=25, choices=PROTOCOL_CHOICES, default=0)
-    timestamp = models.DateTimeField(auto_now_add=True)
-
-class Junos(models.Model):
-    PROTOCOL_CHOICES = (
-        (0,''),
-        (5,'Netconf'),
-        (3,'Telnet'),
-        (4,'TL1'),
-        (5,'SSH'),
-    )
-    transport = models.CharField(max_length=25, choices=PROTOCOL_CHOICES, default=5)
-    port = models.IntegerField(default=22)
-    timestamp = models.DateTimeField(auto_now_add=True)
-
-"""
 class Cmds(models.Model):
     cmdprotocol = models.CharField(max_length=25, choices=CMDPROTOCOL_CHOICES, default=0)
     cmdsystem = models.CharField(max_length=25, choices=CMDSYSTEM_CHOICES, default=0)
