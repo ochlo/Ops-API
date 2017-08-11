@@ -8,25 +8,38 @@ from django.db import models
 class RedHat(models.Model):
     PROTOCOL_CHOICES = (
         #(0,''),
-        (1,'REST API'),
-        (2,'SOAP'),
-        (3,'Telnet'),
-        (4,'SSH'),
+        ('rest', 'REST API'),
+        ('soap', 'SOAP'),
+        ('telnet', 'Telnet'),
+        ('ssh', 'SSH'),
     )
-    ip = models.IPAddressField()
-    protocol = models.CharField(choices=PROTOCOL_CHOICES)
+    hostname = models.CharField(max_length=127)
+    ip = models.GenericIPAddressField()
+    protocol = models.CharField(max_length=15, choices=PROTOCOL_CHOICES)
     timestamp = models.DateTimeField(auto_now_add=True)
 
 class Junos(models.Model):
     PROTOCOL_CHOICES = (
         #(0,''),
-        (1,'Netconf'),
-        (2,'Telnet'),
-        (3,'TL1'),
-        (4,'SSH'),
+        ('netconf', 'Netconf'),
+        ('telnet', 'Telnet'),
+        ('ssh', 'SSH'),
     )
-    ip = models.IPAddressField()
-    protocol = models.CharField(choices=PROTOCOL_CHOICES)
+    hostname = models.CharField(max_length=127)
+    ip = models.GenericIPAddressField(max_length=15)
+    protocol = models.CharField(max_length=15, choices=PROTOCOL_CHOICES)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+class Junose(models.Model):
+    PROTOCOL_CHOICES = (
+        #(0,''),
+        ('netconf', 'Netconf'),
+        ('telnet', 'Telnet'),
+        ('ssh', 'SSH'),
+    )
+    hostname = models.CharField(max_length=127)
+    ip = models.GenericIPAddressField(max_length=15)
+    protocol = models.CharField(max_length=15, choices=PROTOCOL_CHOICES)
     timestamp = models.DateTimeField(auto_now_add=True)
 
 """

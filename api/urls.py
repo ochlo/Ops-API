@@ -23,6 +23,7 @@ router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'redhat', views.RedHatViewSet)
 router.register(r'junos', views.JunosViewSet)
+router.register(r'junose', views.JunoseViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),

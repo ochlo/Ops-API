@@ -3515,3 +3515,528 @@ ops.RedHat.ip: (fields.E900) IPAddressField has been removed except for support 
 ops.RedHat.protocol: (fields.E120) CharFields must define a 'max_length' attribute.
 
 System check identified 4 issues (0 silenced).
+Unhandled exception in thread started by <function wrapper at 0x7f3a12d24c80>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 405, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+ops.Junos.ip: (fields.E900) IPAddressField has been removed except for support in historical migrations.
+	HINT: Use GenericIPAddressField instead.
+ops.Junos.protocol: (fields.E120) CharFields must define a 'max_length' attribute.
+ops.RedHat.ip: (fields.E900) IPAddressField has been removed except for support in historical migrations.
+	HINT: Use GenericIPAddressField instead.
+ops.RedHat.protocol: (fields.E120) CharFields must define a 'max_length' attribute.
+
+System check identified 4 issues (0 silenced).
+Unhandled exception in thread started by <function wrapper at 0x7f616a401938>
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/netops-api/ops/models.py", line 8, in <module>
+    class RedHat(models.Model):
+  File "/home/ochlo/py/netops-api/ops/models.py", line 16, in RedHat
+    ip = models.GenericIPAddressFieldField()
+AttributeError: 'module' object has no attribute 'GenericIPAddressFieldField'
+Unhandled exception in thread started by <function wrapper at 0x7f989bd65c80>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 405, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+ops.Junos.ip: (fields.E120) CharFields must define a 'max_length' attribute.
+ops.Junos.protocol: (fields.E120) CharFields must define a 'max_length' attribute.
+ops.RedHat.ip: (fields.E120) CharFields must define a 'max_length' attribute.
+ops.RedHat.protocol: (fields.E120) CharFields must define a 'max_length' attribute.
+
+System check identified 4 issues (0 silenced).
+Unhandled exception in thread started by <function wrapper at 0x7f8b17746c80>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 405, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+ops.Junos.protocol: (fields.E120) CharFields must define a 'max_length' attribute.
+ops.RedHat.protocol: (fields.E120) CharFields must define a 'max_length' attribute.
+
+System check identified 2 issues (0 silenced).
+Error: You don't have permission to access that port.
+Error: You don't have permission to access that port.
+Error: You don't have permission to access that port.
+Error: You don't have permission to access that port.
+[11/Aug/2017 06:10:16] "GET / HTTP/1.1" 200 5333
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1132
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 2876
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+[11/Aug/2017 06:10:16] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+[11/Aug/2017 06:10:16] "GET /favicon.ico HTTP/1.1" 404 5677
+/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.Junos'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+Internal Server Error: /junos/
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 86, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 42, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/generics.py", line 173, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/pagination.py", line 226, in paginate_queryset
+    return list(self.page)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/paginator.py", line 137, in __len__
+    return len(self.object_list)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 886, in execute_sql
+    raise original_exception
+OperationalError: no such column: ops_junos.ip
+[11/Aug/2017 06:10:20] "GET /junos/ HTTP/1.1" 500 117028
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2017 - 06:10:01
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8080/
+Quit the server with CONTROL-C.
+/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.RedHat'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+Internal Server Error: /redhat/
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 86, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 42, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/generics.py", line 173, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/pagination.py", line 226, in paginate_queryset
+    return list(self.page)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/paginator.py", line 137, in __len__
+    return len(self.object_list)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 886, in execute_sql
+    raise original_exception
+OperationalError: no such column: ops_redhat.ip
+[11/Aug/2017 06:13:58] "GET /redhat/ HTTP/1.1" 500 117085
+Internal Server Error: /redhat/
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 86, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 484, in to_representation
+    fields = self._readable_fields
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 378, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 364, in fields
+    for key, value in self.get_fields().items():
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1017, in get_fields
+    source, info, model, depth
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1151, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 1258, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `hostname` is not valid for model `RedHat`.
+[11/Aug/2017 06:15:08] "GET /redhat/ HTTP/1.1" 500 133972
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2017 - 06:11:26
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8080/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2017 - 06:17:26
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8080/
+Quit the server with CONTROL-C.
+/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.RedHat'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[11/Aug/2017 06:20:01] "GET /redhat/ HTTP/1.1" 200 5888
+[11/Aug/2017 06:20:07] "GET /redhat/1/ HTTP/1.1" 200 5498
+[11/Aug/2017 06:20:13] "GET /api-auth/login/?next=/redhat/1/ HTTP/1.1" 200 2703
+[11/Aug/2017 06:20:21] "POST /api-auth/login/ HTTP/1.1" 302 0
+[11/Aug/2017 06:20:21] "GET /redhat/1/ HTTP/1.1" 200 11098
+[11/Aug/2017 06:20:50] "PUT /redhat/1/ HTTP/1.1" 200 11124
+[11/Aug/2017 06:20:54] "GET /redhat/ HTTP/1.1" 200 10165
+[11/Aug/2017 06:20:57] "GET /redhat/2/ HTTP/1.1" 200 11098
+[11/Aug/2017 06:21:26] "PUT /redhat/2/ HTTP/1.1" 200 11133
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2017 - 06:18:33
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8080/
+Quit the server with CONTROL-C.
+[11/Aug/2017 06:22:45] "GET /redhat/2/ HTTP/1.1" 200 11162
+[11/Aug/2017 06:22:48] "GET /redhat/2/ HTTP/1.1" 200 11162
+[11/Aug/2017 06:23:02] "GET /redhat/2/ HTTP/1.1" 200 11162
+[11/Aug/2017 06:23:04] "GET /redhat/2/ HTTP/1.1" 200 11162
+[11/Aug/2017 06:23:13] "PUT /redhat/2/ HTTP/1.1" 200 11174
+/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.RedHat'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[11/Aug/2017 06:23:22] "GET /redhat/ HTTP/1.1" 200 10209
+[11/Aug/2017 06:23:28] "GET /redhat/2/ HTTP/1.1" 200 11174
+[11/Aug/2017 06:23:33] "GET /redhat/ HTTP/1.1" 200 10209
+[11/Aug/2017 06:23:35] "GET /redhat/1/ HTTP/1.1" 200 11153
+[11/Aug/2017 06:23:42] "PUT /redhat/1/ HTTP/1.1" 200 11171
+[11/Aug/2017 06:23:45] "GET / HTTP/1.1" 200 5561
+/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.Junos'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+Internal Server Error: /junos/
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/viewsets.py", line 86, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/serializers.py", line 501, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/relations.py", line 390, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "junos-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+[11/Aug/2017 06:23:48] "GET /junos/ HTTP/1.1" 500 114807
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2017 - 06:22:41
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8080/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2017 - 06:24:15
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8080/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2017 - 06:24:25
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8080/
+Quit the server with CONTROL-C.
+/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.Junos'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[11/Aug/2017 06:25:49] "GET /junos/ HTTP/1.1" 200 9783
+[11/Aug/2017 06:25:56] "GET /junos/1/ HTTP/1.1" 200 11085
+[11/Aug/2017 06:26:35] "PUT /junos/1/ HTTP/1.1" 200 11128
+[11/Aug/2017 06:26:41] "GET /junos/ HTTP/1.1" 200 9793
+[11/Aug/2017 06:27:07] "POST /junos/ HTTP/1.1" 201 9796
+[11/Aug/2017 06:27:13] "GET /junos/ HTTP/1.1" 200 10182
+[11/Aug/2017 06:27:31] "GET / HTTP/1.1" 200 5561
+/home/ochlo/py/env/local/lib/python2.7/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'ops.models.RedHat'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[11/Aug/2017 06:27:34] "GET /redhat/ HTTP/1.1" 200 10214
+[11/Aug/2017 06:27:43] "GET / HTTP/1.1" 200 5561
+[11/Aug/2017 06:28:18] "GET /?format=json HTTP/1.1" 200 205
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2017 - 06:25:24
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8080/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2017 - 06:30:03
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8080/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f5d6e52ec80>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/netops-api/ops/views.py", line 47, in <module>
+    class JunoseViewSet(viewsets.ModelViewSet):
+  File "/home/ochlo/py/netops-api/ops/views.py", line 51, in JunoseViewSet
+    queryset = Junose.objects.all().order_by('hostname','ip','protocol')
+NameError: name 'Junose' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f2b02b86050>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/netops-api/ops/views.py", line 47, in <module>
+    class JunoseViewSet(viewsets.ModelViewSet):
+  File "/home/ochlo/py/netops-api/ops/views.py", line 51, in JunoseViewSet
+    queryset = Junose.objects.all().order_by('hostname','ip','protocol')
+NameError: name 'Junose' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f2fdb10d050>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/netops-api/ops/views.py", line 10, in <module>
+    from ops.serializers import UserSerializer, GroupSerializer
+  File "/home/ochlo/py/netops-api/ops/serializers.py", line 27, in <module>
+    class JunoseSerializer(serializers.HyperlinkedModelSerializer):
+  File "/home/ochlo/py/netops-api/ops/serializers.py", line 28, in JunoseSerializer
+    class Meta:
+  File "/home/ochlo/py/netops-api/ops/serializers.py", line 29, in Meta
+    model = Junose
+NameError: name 'Junose' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f7b7f5bc050>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ochlo/py/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ochlo/py/netops-api/api/urls.py", line 19, in <module>
+    from ops import views
+  File "/home/ochlo/py/netops-api/ops/views.py", line 47, in <module>
+    class JunoseViewSet(viewsets.ModelViewSet):
+  File "/home/ochlo/py/netops-api/ops/views.py", line 51, in JunoseViewSet
+    queryset = Junose.objects.all().order_by('hostname','ip','protocol')
+NameError: name 'Junose' is not defined
+[11/Aug/2017 06:36:29] "GET / HTTP/1.1" 200 5687
+[11/Aug/2017 06:36:32] "GET /junose/ HTTP/1.1" 200 10119
+[11/Aug/2017 06:36:49] "GET /junose/ HTTP/1.1" 200 10119
+[11/Aug/2017 06:36:51] "GET / HTTP/1.1" 200 5687
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2017 - 06:36:18
+Django version 1.11.3, using settings 'api.settings'
+Starting development server at http://0:8080/
+Quit the server with CONTROL-C.
+[11/Aug/2017 06:38:03] "GET /junose/ HTTP/1.1" 200 9345
+[11/Aug/2017 06:38:22] "POST /junose/ HTTP/1.1" 201 9742
+[11/Aug/2017 06:38:35] "POST /junose/ HTTP/1.1" 201 9739
+[11/Aug/2017 06:38:40] "GET / HTTP/1.1" 200 5685
+[11/Aug/2017 06:38:48] "GET /junose/ HTTP/1.1" 200 10128
+[11/Aug/2017 06:39:01] "GET / HTTP/1.1" 200 5685
+[11/Aug/2017 06:39:41] "GET /redhat/ HTTP/1.1" 200 10214
+[11/Aug/2017 06:39:45] "GET /redhat/1/ HTTP/1.1" 200 11171
+[11/Aug/2017 06:42:17] "GET / HTTP/1.1" 200 5685
+[11/Aug/2017 06:42:20] "GET /junose/ HTTP/1.1" 200 10128
+[11/Aug/2017 06:47:14] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1732

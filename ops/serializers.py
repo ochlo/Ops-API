@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from ops.models import RedHat, Junos
+from ops.models import RedHat, Junos, Junose
 #Cmds, CMDPROTOCOL_CHOICES, CMDSYSTEM_CHOICES
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -17,11 +17,16 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class RedHatSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = RedHat
-        fields = ('url', 'hostname', 'ip', 'timestamp')
+        fields = ('url', 'hostname', 'ip', 'protocol', 'timestamp')
 
 class JunosSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Junos
-        fields = ('url', 'hostname', 'ip', 'timestamp')
+        fields = ('url', 'hostname', 'ip', 'protocol', 'timestamp')
+		
+class JunoseSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Junose
+        fields = ('url', 'hostname', 'ip', 'protocol', 'timestamp')
 
 #fields = ('url', 'cmdprotocol', 'cmdsystem', 'cmdset', 'cmdline', 'timestamp', 'port', 'protocol', 

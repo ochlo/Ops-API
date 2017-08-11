@@ -9,8 +9,8 @@ from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from ops.serializers import UserSerializer, GroupSerializer
 #Commands
-from ops.models import RedHat, Junos
-from ops.serializers import RedHatSerializer, JunosSerializer
+from ops.models import RedHat, Junos, Junose
+from ops.serializers import RedHatSerializer, JunosSerializer, JunoseSerializer
 #Depends
 #from rest_framework import status
 #from rest_framework.decorators import api_view
@@ -34,14 +34,21 @@ class RedHatViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows cmds to be viewed or edited.
     """
-    queryset = RedHat.objects.all() #.order_by('','')
+    queryset = RedHat.objects.all().order_by('hostname','ip','protocol')
     serializer_class = RedHatSerializer
 
 class JunosViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows cmds to be viewed or edited.
     """
-    queryset = Junos.objects.all() #.order_by('','')
+    queryset = Junos.objects.all().order_by('hostname','ip','protocol')
     serializer_class = JunosSerializer
-    lookup_field = 'protocol'
+	
+class JunoseViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows cmds to be viewed or edited.
+    """
+    queryset = Junose.objects.all().order_by('hostname','ip','protocol')
+    serializer_class = JunoseSerializer
+    #lookup_field = 'ip'
 
